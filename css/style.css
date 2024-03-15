@@ -1,0 +1,150 @@
+:root {
+  --fuenteHeading: "Roboto", sans-serif;
+  --fuenteBody: "Open Sans", sans-serif;
+
+  --amarillo: rgba(255, 255, 0, 0.99);
+  --amarilloHover: rgba(255, 255, 0, 0.244);
+  --violeta: #7c20ba;
+  --gris: #645e5ecb;
+  --grisBold: #434141f3;
+  --grisClaro: #dadada40;
+  --blanco: #ffffff;
+  --negro: #000000;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--fuenteBody);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: var(--gris);
+}
+.contenedor {
+  width: min(90%, 120rem);
+  margin: 0 auto;
+}
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+/* Globales */
+h1,
+h2 {
+  font-family: var(--fuenteHeading);
+  color: var(--negro);
+}
+h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+  color: var(--grisBold);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.barra-alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  background-color: var(--amarillo);
+  color: var(--grisBold);
+}
+.barra-alert a {
+  color: var(--violeta);
+}
+.barra-alert a :hover {
+  cursor: pointer;
+  color: var(--gris);
+  transition: 0.5s;
+}
+.barra-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 10rem;
+  border-bottom: 2px solid var(--grisClaro);
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-izq,
+.menu-der {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.boton {
+  display: block;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ingresar {
+  background-color: white;
+  color: var(--grisBold);
+}
+.boton-ingresar :hover {
+  background-color: var(--grisClaro);
+}
+.boton-aplicar :hover {
+  background-color: var(--amarilloHover);
+}
+.aplicar {
+  background-color: var(--amarillo);
+}
+.botonBajo {
+  padding: 2rem 2.5rem;
+  margin-top: 3rem;
+}
+.contenido_hero {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.contenido_hero_lista {
+  line-height: 4rem;
+  list-style: none;
+  font-size: 2rem;
+  color: var(--violeta);
+}
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+.icon_bocina { 
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.iconos {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.imagen_hero {
+  height: 80vh;
+  border-radius: 5rem;
+}
